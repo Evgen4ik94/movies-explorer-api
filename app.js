@@ -25,7 +25,10 @@ app.use(errors()); // подключение обработчика ошибок
 app.use(errorHandler); // подключение мидлвары централизованного обработчика ошибок
 
 mongoose.connect(NODE_ENV === 'production' ? DATABASE_URL : devDatabaseUrl);
-app.listen(PORT);
+app.listen(PORT, () => {
+  // eslint-disable-next-line no-console
+  console.log(`listen at port ${PORT}`);
+});
 
 // файл .env не выгружается на Github, но в нем записаны следующие данные:
 // NODE_ENV = production
