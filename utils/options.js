@@ -5,7 +5,7 @@ const limiter = rateLimit({
   max: 100, // можно совершить максимум 100 запросов с одного IP
 });
 
-const devDatabaseUrl = 'mongodb://0.0.0.0:27017/movies-db';
+const devDatabaseUrl = 'mongodb://0.0.0.0:27017/bitfilmsdb';
 
 const devJwtKey = 'dev-secret-key';
 

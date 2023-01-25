@@ -34,4 +34,4 @@ app.listen(PORT, () => {
 // NODE_ENV = production
 // JWT_SECRET = 'a4768f7eb2a93f64b0dcbc8998e135deb28135ebcfc17578f96d4d65b6c78'
 // PORT = 3000
-// DATABASE_URL = 'mongodb://localhost:27017/movies-db'
+// DATABASE_URL = 'mongodb://localhost:27017/bitfilmsdb'
